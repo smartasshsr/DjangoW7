@@ -12,7 +12,7 @@
     <form action="" method="post">
       {% csrf_token %}
       <!-- [코드 작성] Django에서 생성된 posting_form을 p태그 안쪽에 배치  -->
-      
+      {{posting_form.as_p}} 
   
       <div class="posting-form__function--bottom">
         <!-- 글을 수정하기 위해 posting 객체가 같이 전달된 경우에는 취소 버튼 보여주기 -->

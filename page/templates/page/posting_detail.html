@@ -16,7 +16,7 @@
           <div>
             <a class="button" href="{% url 'page:posting_update' posting.id %}">수정</a>
             <!-- [코드 추가] POST 방식으로 작성글 삭제 후 action을 이용해 해당 url로 이동 -->
-            <form action="" method="post">
+            <form action="{% url 'page:posting_delete' posting.id %}" method="post">
               {% csrf_token %}
               <input class="button" type="submit" value="삭제">
             </form>

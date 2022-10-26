@@ -10,4 +10,8 @@ urlpatterns = [
     path('rsp/reset/', views.rsp_reset, name='rsp_reset'),
     path('weapon-create/', views.weapon_create, name='weapon_create'),
     path('weapon-list/', views.weapon_list, name='weapon_list'),
+
+    
 ]
+
+
